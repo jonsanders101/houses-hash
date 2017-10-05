@@ -1,4 +1,5 @@
-# pairing-challenges
-Makers Academy Week 1 Pairing Challenges
+# House Sale Hash
 
-Some exercises to practise pairing.
+A challenge to test pair programming skills.
+
+The task was to take the given hash and write a `puts` statement that would print each sale in a human-readble form.
