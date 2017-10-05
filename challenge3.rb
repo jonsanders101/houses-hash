@@ -3,10 +3,6 @@ require 'date'
 # A hash of all house prices and transactions
 # Data from the Land Registry and transformed through Postcodes.io
 
-
-
-
-
 transactions = {["Basingstoke and Deane", "Tadley South"]=>
   {:count=>1,
    :average=>94000,
@@ -69,5 +65,5 @@ transactions = {["Basingstoke and Deane", "Tadley South"]=>
     [[60000,
       "SP10 1JG",
       Date.parse("1995-06-23")]]}}
-puts Date.parse("1995-09-01").is_a? Date
+
 transactions.each_pair {|k,v| puts "A house was sold in #{k[0]}, #{k[1]} for £#{v.fetch(:transactions)[0][0]} on #{(v.fetch(:transactions)[0][2]).strftime('%a %d %b %Y')}"}
